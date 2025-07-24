@@ -19,7 +19,7 @@ This is a simple yet powerful **Weather App** built with **HTML, CSS, and JavaSc
 
 | Home                          | Result                        |
 | ----------------------------- | ----------------------------- |
-| ![Home](screenshots/home.png) | ![Show](screenshots/show.png) |
+| ![Home](screenshots/home.png) | ![Show](screenshots/Show.png) |
 
 ---
 
