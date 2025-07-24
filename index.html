@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherSphere | Real-time Weather Updates</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+</head>
+<body>
+    <div class="background-animation"></div>
+    <div class="card">
+        <div class="app-header">
+            <h1>WeatherSphere</h1>
+            <p class="app-tagline">Real-time weather insights</p>
+        </div>
+        
+        <div class="search-container">
+            <div class="search">
+                <input type="text" placeholder="Enter city name..." spellcheck="false">
+                <button class="search-button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <div class="error-message">
+                <i class="fas fa-exclamation-circle"></i>
+                <p>City not found. Please check spelling or try another location.</p>
+            </div>
+        </div>
+
+        <div class="weather-display">
+            <div class="weather-icon-container">
+                <img src="images/rain.png" class="weather-icon">
+                <div class="weather-description">Moderate Rain</div>
+            </div>
+            
+            <div class="temperature-container">
+                <h1 class="temperature">22°<span>C</span></h1>
+                <div class="feels-like">Feels like 24°</div>
+            </div>
+            
+            <h2 class="city-name">
+                <i class="fas fa-map-marker-alt"></i> Karachi, Pakistan
+            </h2>
+            
+            <div class="weather-details">
+                <div class="detail-card humidity">
+                    <div class="detail-icon">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <div class="detail-info">
+                        <div class="detail-value">50%</div>
+                        <div class="detail-label">Humidity</div>
+                    </div>
+                </div>
+                
+                <div class="detail-card wind">
+                    <div class="detail-icon">
+                        <i class="fas fa-wind"></i>
+                    </div>
+                    <div class="detail-info">
+                        <div class="detail-value">15 km/h</div>
+                        <div class="detail-label">Wind Speed</div>
+                    </div>
+                </div>
+                
+                <div class="detail-card pressure">
+                    <div class="detail-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <div class="detail-info">
+                        <div class="detail-value">1012 hPa</div>
+                        <div class="detail-label">Pressure</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="forecast-preview">
+                <div class="forecast-day">
+                    <div>Mon</div>
+                    <i class="fas fa-sun"></i>
+                    <div>24°</div>
+                </div>
+                <div class="forecast-day">
+                    <div>Tue</div>
+                    <i class="fas fa-cloud-sun"></i>
+                    <div>23°</div>
+                </div>
+                <div class="forecast-day">
+                    <div>Wed</div>
+                    <i class="fas fa-cloud-showers-heavy"></i>
+                    <div>21°</div>
+                </div>
+                <div class="forecast-day">
+                    <div>Thu</div>
+                    <i class="fas fa-bolt"></i>
+                    <div>20°</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="app-footer">
+            <p>Last updated: <span class="update-time">Today, 3:45 PM</span></p>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
